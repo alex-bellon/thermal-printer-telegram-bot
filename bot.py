@@ -32,7 +32,7 @@ def print_image(update, context):
 
 
 def main():
-    token = open('telegram.token'. 'r').read()
+    token = open('telegram.token', 'r').read()
     updater = Updater(token, use_context=True)
 
     disp = updater.dispatcher
