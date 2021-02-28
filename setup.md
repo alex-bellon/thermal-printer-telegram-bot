@@ -23,7 +23,7 @@
     ```
     or
     ```shell
-    sudo apt install system-config-printer cups
+    sudo apt install system-config-printer cups libcups2-dev
     ```
 
 3. Now add the printer to your CUPS server and set up the proper settings
