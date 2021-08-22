@@ -1,3 +1,4 @@
 *.token
 print
 print.txt
+/logs
