@@ -1,6 +1,16 @@
 # How to set up the receipt printer
 
-1. First use this repo to install CUPS drivers for the printer:
+1. Install the following programs to allow you to edit printer settings:
+
+    ```shell
+    sudo pacman -S system-config-printer cups
+    ```
+    or
+    ```shell
+    sudo apt install system-config-printer cups libcups2-dev
+    ```
+
+2. Use this repo to install CUPS drivers for the printer:
 
     ```shell
     git clone https://github.com/klirichek/zj-58.git
@@ -14,16 +24,6 @@
     cmake --build .
 
     sudo make install
-    ```
-
-2. Now install the following programs to allow you to edit printer settings:
-
-    ```shell
-    sudo pacman -S system-config-printer cups
-    ```
-    or
-    ```shell
-    sudo apt install system-config-printer cups libcups2-dev
     ```
 
 3. Now add the printer to your CUPS server and set up the proper settings

@@ -10,6 +10,8 @@ def log_message(message, sender):
 
     now = datetime.now()
     time = now.strftime('%Y-%m-%d')
+    if not os.path.isdir('logs/'):
+        os.system('mkdir logs/')
     log = open('logs/log-' + time + '.txt', 'a')
     if sender.last_name:
         sender = sender.first_name + ' ' + sender.last_name + ' (@' + sender.username + ')'
